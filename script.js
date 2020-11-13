@@ -33,3 +33,5 @@ async function loop() {
   // await predict();
   window.requestAnimationFrame(loop);
 }
+
+init();
