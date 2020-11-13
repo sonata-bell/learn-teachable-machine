@@ -2,6 +2,8 @@ const icon = document.querySelector('.icon');
 const on = document.querySelector('.fas.fa-video');
 const off = document.querySelector('.fas.fa-video-slash');
 const camera = document.querySelector('.camera');
+const name = document.querySelector('.name');
+const percent = document.querySelector('.percent');
 
 icon.addEventListener('click', () => {
   on.classList.toggle('invisible');
@@ -30,8 +32,17 @@ async function init() {
 
 async function loop() {
   webcam.update();
-  // await predict();
+  await predict();
   window.requestAnimationFrame(loop);
 }
 
 init();
+
+async function predict() {
+  const prediction = await model.predict(webcam.canvas);
+
+  for (let i = 0; i < maxPredictions; i++) {
+    name.innerHTML = prediction[i].className;
+    percent.innerHTML = prediction[i].probability.toFixed(2) * 100;
+  }
+}
