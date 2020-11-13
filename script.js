@@ -43,6 +43,6 @@ async function predict() {
 
   for (let i = 0; i < maxPredictions; i++) {
     name.innerHTML = prediction[i].className;
-    percent.innerHTML = prediction[i].probability.toFixed(2) * 100;
+    percent.innerHTML = prediction[i].probability.toFixed(2) * 100 + '%';
   }
 }
