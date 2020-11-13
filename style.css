@@ -1,0 +1,38 @@
+.container {
+  width: 480px;
+  padding: 10px;
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  top: 30px;
+  right: 36px;
+  cursor: pointer;
+}
+
+.camera {
+  width: 480px;
+  height: 480px;
+}
+
+.name {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.percent {
+  text-align: center;
+  font-size: 14px;
+}
+
+.description {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.icon .invisible {
+  display: none;
+}
