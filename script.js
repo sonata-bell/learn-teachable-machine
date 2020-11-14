@@ -17,6 +17,7 @@ icon.addEventListener('click', async () => {
     await webcam.pause();
   } else {
     await webcam.play();
+    window.requestAnimationFrame(loop);
   }
 });
 
@@ -31,7 +32,7 @@ async function init() {
   webcam = new tmImage.Webcam(480, 480, flip);
   await webcam.setup();
   // await webcam.play();
-  window.requestAnimationFrame(loop);
+  // window.requestAnimationFrame(loop);
 
   camera.appendChild(webcam.canvas);
 }
