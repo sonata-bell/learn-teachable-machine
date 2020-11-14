@@ -6,6 +6,9 @@ const name = document.querySelector('.name');
 const percent = document.querySelector('.percent');
 const description = document.querySelector('.description');
 
+const URL = './model/';
+let model, webcam, labelContainer, maxPredictions;
+
 icon.addEventListener('click', () => {
   on.classList.toggle('invisible');
   off.classList.toggle('invisible');
@@ -16,10 +19,6 @@ icon.addEventListener('click', () => {
     await webcam.play();
   }
 });
-
-const URL = './model/';
-
-let model, webcam, labelContainer, maxPredictions;
 
 async function init() {
   const modelURL = URL + 'model.json';
