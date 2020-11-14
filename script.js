@@ -30,7 +30,7 @@ async function init() {
   const flip = true;
   webcam = new tmImage.Webcam(480, 480, flip);
   await webcam.setup();
-
+  // await webcam.play();
   window.requestAnimationFrame(loop);
 
   camera.appendChild(webcam.canvas);
@@ -54,18 +54,18 @@ async function predict() {
     if (probability >= 75) {
       if (name.innerHTML !== className) {
         name.innerHTML = className;
+
+        if (className === 'Me') {
+          description.innerHTML = 'Me에 대한 설명을 적어볼까요?';
+        }
+
+        if (className === 'None') {
+          description.innerHTML = 'None에 대한 설명을 적어볼까요?';
+        }
       }
 
       if (percent.innerHTML !== probability + '%') {
         percent.innerHTML = probability + '%';
-      }
-
-      if (className === 'Me') {
-        description.innerHTML = 'Me에 대한 설명을 적어볼까요?';
-      }
-
-      if (className === 'None') {
-        description.innerHTML = 'None에 대한 설명을 적어볼까요?';
       }
     }
   }
