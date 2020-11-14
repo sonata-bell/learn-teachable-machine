@@ -4,6 +4,7 @@ const off = document.querySelector('.fas.fa-video-slash');
 const camera = document.querySelector('.camera');
 const name = document.querySelector('.name');
 const percent = document.querySelector('.percent');
+const description = document.querySelector('.description');
 
 icon.addEventListener('click', () => {
   on.classList.toggle('invisible');
@@ -52,6 +53,14 @@ async function predict() {
 
       if (percent.innerHTML !== probability + '%') {
         percent.innerHTML = probability + '%';
+      }
+
+      if (className === 'Me') {
+        description.innerHTML = 'Me에 대한 설명을 적어볼까요?';
+      }
+
+      if (className === 'None') {
+        description.innerHTML = 'None에 대한 설명을 적어볼까요?';
       }
     }
   }
