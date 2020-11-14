@@ -31,8 +31,6 @@ async function init() {
   const flip = true;
   webcam = new tmImage.Webcam(480, 480, flip);
   await webcam.setup();
-  // await webcam.play();
-  // window.requestAnimationFrame(loop);
 
   camera.appendChild(webcam.canvas);
 }
