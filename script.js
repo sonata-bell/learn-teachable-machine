@@ -42,12 +42,17 @@ async function predict() {
   const prediction = await model.predict(webcam.canvas);
 
   for (let i = 0; i < maxPredictions; i++) {
-    if (name.innerHTML !== prediction[i].className) {
-      name.innerHTML = prediction[i].className;
-    }
+    const className = prediction[i].className;
+    const probability = prediction[i].probability.toFixed(2) * 100;
 
-    if (percent.innerHTML !== prediction[i].probability.toFixed(2) * 100 + '%') {
-      percent.innerHTML = prediction[i].probability.toFixed(2) * 100 + '%';
+    if (probability >= 75) {
+      if (name.innerHTML !== className) {
+        name.innerHTML = className;
+      }
+
+      if (percent.innerHTML !== probability + '%') {
+        percent.innerHTML = probability + '%';
+      }
     }
   }
 }
