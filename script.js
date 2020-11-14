@@ -9,7 +9,7 @@ const description = document.querySelector('.description');
 const URL = './model/';
 let model, webcam, labelContainer, maxPredictions;
 
-icon.addEventListener('click', () => {
+icon.addEventListener('click', async () => {
   on.classList.toggle('invisible');
   off.classList.toggle('invisible');
 
