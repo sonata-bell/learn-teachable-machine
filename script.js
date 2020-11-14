@@ -9,6 +9,12 @@ const description = document.querySelector('.description');
 icon.addEventListener('click', () => {
   on.classList.toggle('invisible');
   off.classList.toggle('invisible');
+
+  if (on.classList.length === 2) {
+    await webcam.pause();
+  } else {
+    await webcam.play();
+  }
 });
 
 const URL = './model/';
@@ -25,7 +31,7 @@ async function init() {
   const flip = true;
   webcam = new tmImage.Webcam(480, 480, flip);
   await webcam.setup();
-  await webcam.play();
+
   window.requestAnimationFrame(loop);
 
   camera.appendChild(webcam.canvas);
