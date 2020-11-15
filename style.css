@@ -1,8 +1,15 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
 .container {
   width: 480px;
   padding: 10px;
   position: relative;
   font-family: 'Noto Sans KR', sans-serif;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 }
 
 .icon {
@@ -10,11 +17,24 @@
   top: 30px;
   right: 36px;
   cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon i {
+  font-size: 24px;
+  color: #ffffff;
 }
 
 .camera {
   width: 480px;
   height: 480px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .name {
