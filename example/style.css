@@ -1,5 +1,11 @@
 .container {
   width: 400px;
-  height: 400px;
+  padding: 10px;
   background-color: aqua;
+}
+
+.cam {
+  width: 380px;
+  height: 380px;
+  background-color: brown;
 }
