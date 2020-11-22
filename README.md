@@ -9,3 +9,4 @@
 3. 이현진(우송고): https://github.com/ihyeonjin372/learn-tm
 4. 이천국(대전고): https://github.com/LeeCheonguk/learn-teachable-machine
 5. 이혜원(우송고): https://github.com/wonnem/leehyewon/tree/master/homework
+6. 안수현(우송고): https://github.com/an-suhyun/template
