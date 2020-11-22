@@ -8,3 +8,4 @@
 - 정은총(대전고): https://github.com/little1667/templet
 - 이현진(우송고): https://github.com/ihyeonjin372/learn-tm
 - 이천국(대전고): https://github.com/LeeCheonguk/learn-teachable-machine
+- 이혜원(우송고): https://github.com/wonnem/leehyewon/tree/master/homework
