@@ -1,3 +1,5 @@
+import { percent, data } from './config';
+
 const icon = document.querySelector('.icon');
 const on = document.querySelector('.fas.fa-video');
 const off = document.querySelector('.fas.fa-video-slash');
@@ -7,7 +9,8 @@ const percent = document.querySelector('.percent');
 const description = document.querySelector('.description');
 
 const URL = './model/';
-let model, webcam, labelContainer, maxPredictions;
+
+let model, webcam, maxPredictions;
 
 icon.addEventListener('click', async () => {
   on.classList.toggle('invisible');
@@ -50,17 +53,10 @@ async function predict() {
     const className = prediction[i].className;
     const probability = prediction[i].probability.toFixed(2) * 100;
 
-    if (probability >= 75) {
+    if (probability >= percent) {
       if (name.innerHTML !== className) {
         name.innerHTML = className;
-
-        if (className === 'Me') {
-          description.innerHTML = 'Me에 대한 설명을 적어볼까요?';
-        }
-
-        if (className === 'None') {
-          description.innerHTML = 'None에 대한 설명을 적어볼까요?';
-        }
+        description.innerHTML = data[className];
       }
 
       if (percent.innerHTML !== probability + '%') {
