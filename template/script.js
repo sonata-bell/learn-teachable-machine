@@ -1,5 +1,3 @@
-import { percent, data } from './config';
-
 const icon = document.querySelector('.icon');
 const on = document.querySelector('.fas.fa-video');
 const off = document.querySelector('.fas.fa-video-slash');
@@ -52,6 +50,12 @@ async function predict() {
   for (let i = 0; i < maxPredictions; i++) {
     const className = prediction[i].className;
     const probability = prediction[i].probability.toFixed(2) * 100;
+
+    const percent = 75;
+    const data = {
+      Me: 'Me에 대한 설명을 적어볼까요?',
+      None: 'None에 대한 설명을 적어볼까요?',
+    };
 
     if (probability >= percent) {
       if (name.innerHTML !== className) {
