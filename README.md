@@ -20,3 +20,4 @@
 14. 주재석(우송고): https://github.com/wnwotjr09/template
 15. 양가인(우송고): https://github.com/YANGGAIN/learn-teachable-machine
 16. 이주연(우송고): https://github.com/leejuyeon721/bh
+17. 김성현(대전고): https://github.com/blacksh0103/learn-tm
