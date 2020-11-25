@@ -53,7 +53,7 @@ async function predict() {
 
     const data = {
       Me: 'Me에 대한 설명을 적어볼까요?',
-      None: 'None에 대한 설명을 적어볼까요?',
+      Delete: 'Delete에 대한 설명을 적어볼까요?',
     };
 
     if (probability >= 75) {
