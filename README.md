@@ -17,3 +17,5 @@
 11. 박채은(우송고): https://github.com/parkcodms/tm
 12. 김준성(대전고): https://github.com/jsstar7147/learn-teachable-machine
 13. 이영승(우송고): https://github.com/yy0597/human
+14. 주재석(우송고): https://github.com/wnwotjr09/template
+15. 양가인(우송고): https://github.com/YANGGAIN/learn-teachable-machine
