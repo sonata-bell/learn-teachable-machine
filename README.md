@@ -24,4 +24,4 @@
 18. 한지수(우송고): https://github.com/hanjisoo801/template
 19. 오준영(우송고): https://github.com/dhwnsdud321/template
 20. 이재빈(우송고): https://github.com/dlwoqls/template
-21. 조성환(대전고): https://github.com/kaang0018/text12
+21. 조성환(대전고): https://github.com/kaang0018/gaboza
