@@ -30,3 +30,4 @@
 24. 문현우(대전고): https://github.com/hyunwoo119/-template
 25. 홍민기(우송고): https://github.com/mingi0/template
 26. 임찬호(우송고): https://github.com/dlacksgh/template
+27. 임준혁(대전고): https://github.com/imjunyok/learn-tm
