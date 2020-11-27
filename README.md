@@ -10,7 +10,7 @@
 4. 이천국(대전고): https://github.com/LeeCheonguk/learn-teachable-machine
 5. 이혜원(우송고): https://github.com/wonnem/leehyewon
 6. 안수현(우송고): https://github.com/an-suhyun/template
-7. 설유찬(대전고): https://github.com/ycseol03/-template
+7. 설유찬(대전고): https://github.com/ycseol03/Temple
 8. 최부승(외삼중): https://github.com/junny200679/learn_tm
 9. 박종원(대전고): https://github.com/LPMINO/template
 10. 김인성(우송고): https://github.com/Danto7632/template
