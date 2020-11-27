@@ -28,3 +28,4 @@
 22. 박재원(대전고): https://github.com/HEYROO-KOR/sw-camp/tree/main
 23. 임준호(대전고): https://github.com/dlawnsgh1204/jh/tree/main
 24. 문현우(대전고): https://github.com/hyunwoo119/-template
+25. 홍민기(우송고): https://github.com/mingi0/template
